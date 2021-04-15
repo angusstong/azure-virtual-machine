@@ -5,7 +5,9 @@
 ### Step 1 - Create Custom Image Virtual Machine
 
 1. Create [Linux - Ubuntu](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal) VM via Azure Portal
+
    ![create-linux-vm](./media/create-linux-vm.png)
+
 1. Configure VM as Ngnix Server
    Install web server
    ```
