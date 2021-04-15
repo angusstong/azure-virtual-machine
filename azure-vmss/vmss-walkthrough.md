@@ -7,6 +7,12 @@
 1. Create [Linux - Ubuntu](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal) VM via Azure Portal
    ![create-linux-vm](./media/create-linux-vm.png)
 1. Configure VM as Ngnix Server
+   Install web server
+   ```
+   sudo apt-get -y update
+   sudo apt-get -y install nginx
+   ```
+   ![configure-ngnix-svr](./media/configure-ngnix-svr.png)
 1. Generalize the VM as an image
 
 ### Step 2 - Create Shared Image Gallery
