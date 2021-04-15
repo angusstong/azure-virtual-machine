@@ -32,6 +32,7 @@
 
 ### References
 
+[Custom VMSS deployment walkthrough](./vmss-walkthrough.md)
 [Build automatically-scalable applications with Azure Virtual Machine Scale Sets](https://www.youtube.com/watch?v=TN0b2cMQKAM)
 
 ## Pricing
