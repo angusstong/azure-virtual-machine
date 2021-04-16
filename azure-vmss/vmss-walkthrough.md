@@ -57,29 +57,60 @@
 
 ### Step 3 - Create Virtual Machine Scale Sets
 
-1. Create [Virtual Machine Scale Sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/quick-create-portal) and select prepared custom image
+1. Create [Virtual Machine Scale Sets](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/quick-create-portal) based on Custom Image and Load Balancer
+
+   - Search Virtual Machine Scale Set in Marketplace
 
    ![create-vmss-p1](./media/create-vmss-p1.png)
 
+   - Create VMSS with Custom Image
+
    ![create-vmss-p2](./media/create-vmss-p2.png)
+
+   - Configure Network Interface of VMSS with **inbound rules**
 
    ![create-vmss-p3](./media/create-vmss-p3.png)
 
+   - Configure **Load Balancer** and backend pool
+
    ![create-vmss-p4](./media/create-vmss-p4.png)
+
+   - Configure **Scaling policy**
 
    ![create-vmss-p5](./media/create-vmss-p5.png)
 
-1. Configure endpoint with [Load Balancer](https://docs.microsoft.com/en-us/azure/load-balancer/load-balancer-overview) or [Application Gateway](https://docs.microsoft.com/en-us/azure/application-gateway/overview) for public access
+   - Configure **Upgrade Policy**
 
-   ![create-load-balancer-p1](./media/create-load-balancer-p1.png)
+   ![create-vmss-p6](./media/create-vmss-p6.png)
 
-   ![create-load-balancer-p2](./media/create-load-balancer-p2.png)
+   - Configure **Health Probe**
 
-   ![configure-load-balancer](./media/configure-load-balancer.png)
+   ![create-vmss-p7](./media/create-vmss-p7.png)
+
+1. Review VMSS and connectivity
+
+   - Review Resource Group
+
+   ![review-vmss-p1](./media/review-vmss-p1.png)
+
+   - Check Load Balancer and Public IP Address
+
+   ![review-vmss-p2](./media/review-vmss-p2.png)
+
+   - Check VMSS instances
+
+   ![review-vmss-p4](./media/review-vmss-p4.png)
+
+   - Check VMSS connectivity
+
+   ![review-vmss-p3](./media/review-vmss-p3.png)
 
 ### FAQ
 
-1. What is the alternative for deploying custom VMSS without Shared Image Gallery?
+1. What are the alternative options for deploying custom VMSS without Shared Image Gallery?
+
+   - Upload a VHD and create an image from it
+   - Update the Reference Image ID regularly
 
 1. How can I update the reference image without integration of Shared Image Gallery?
 
