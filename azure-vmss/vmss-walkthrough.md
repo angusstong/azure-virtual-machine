@@ -41,17 +41,29 @@
 
 1. Capture generalized VM with versioning
 
+   - View VM information
+
    ![capture-generalized-vm](./media/capture-generalized-vm.png)
+
+   - Capture the image and store it in image gallery
 
    ![capture-generalized-vm-p2](./media/capture-generalized-vm-p2.png)
 
 1. Test the created VM with new VM instance
 
+   - Find the created image in image gallery
+
    ![view-captured-img](./media/view-captured-img.png)
+
+   - Create a new VM from the image
 
    ![test-custom-img](./media/test-custom-img.png)
 
+   - View the new VM information
+
    ![test-custom-img-p2](./media/test-custom-img-p2.png)
+
+   - Check the connectivity and expected response
 
    ![test-custom-img-p3](./media/test-custom-img-p3.png)
 
