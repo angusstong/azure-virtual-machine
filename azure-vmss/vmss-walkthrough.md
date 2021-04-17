@@ -122,8 +122,5 @@
 1. What are the alternative options for deploying custom VMSS without Shared Image Gallery?
 
    - Upload a VHD and create an image from it
-   - Update the Reference Image ID regularly
-
-1. How can I update the reference image without integration of Shared Image Gallery?
-
-1. How can I protect the active session during scale-in operation? Will VMSS detect the session and wait until the session is done? Will VMSS stop distributing traffic to planned scale-in instance?
+   - Change the image your scale set uses by updating the image reference ID property using Cloud Shell: (more information please refer to [Update the OS image for your scale set](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-upgrade-scale-set#update-the-os-image-for-your-scale-set))
+   - Select the instance you want to upgrade, and then click "Upgrade" to make the modified image take effect in the corresponding VMSS instance
