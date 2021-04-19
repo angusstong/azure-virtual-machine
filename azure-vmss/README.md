@@ -1,5 +1,7 @@
 # Azure Virtual Machine Scale Set
 
+[home](../README.md)
+
 [Docs - What are virtual machine scale sets?](https://docs.microsoft.com/en-us/azure/virtual-machine-scale-sets/overview)
 
 ## Features and Benefits
